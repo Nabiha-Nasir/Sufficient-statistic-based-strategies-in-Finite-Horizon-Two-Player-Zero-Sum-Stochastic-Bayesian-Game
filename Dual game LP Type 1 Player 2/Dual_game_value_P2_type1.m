@@ -151,5 +151,7 @@ for t=1:T
     end
 end
 %%% Player 2's optimal strategy
-tau %tau(1st row) for b=1 and tau(2nd row) for b=2. Each column indicates each information set at different stages. For example. 4th column is for T=2 (l_1=1, a_1=1, b_1=1, l_2=2)
-
+tau %tau(1st row) for b=1 and tau(2nd row) for b=2. Each column indicates each information set at
+%different stages. For example. 5th column is for T=2 (l_1=1, a_1=1, b_1=2,
+%l_2=1). For this information set player 2 take action b=1 with probability
+%0 and b=2 with probability 1
