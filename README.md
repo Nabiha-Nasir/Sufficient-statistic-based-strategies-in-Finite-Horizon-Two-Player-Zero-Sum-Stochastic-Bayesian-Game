@@ -20,4 +20,7 @@ For example, <img src="https://render.githubusercontent.com/render/math?math=P_{
 For example, <img src="https://render.githubusercontent.com/render/math?math=Q_{a=1,b=1}(l_{t-1}=2,l_t=2)=0.5">.
 
 ### Goal:
-The goal of this project is to design a sufficient statistic based algorithm to find the optimal stratgies of the players for finite horizon game.
+The goal of this project is to design a sufficient statistic based algorithm to find the optimal stratgies of the players for finite horizon game and reduce the computational complexity. 
+
+### Solution (window-by-window method)
+In primal game the sufficient statistics are not fully accessible to the player. Thats why dual game is introduced where the belief and inital vector payoff are fully accessible to the player. But directly using the LP of dual game for a large horizon game is computationally heavy. Thats why we divide the total game into multiple windows and solve it window by window and update the strategy periodically. We refer this method as window by window method.
