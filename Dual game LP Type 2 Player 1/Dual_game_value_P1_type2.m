@@ -1,6 +1,8 @@
 clear all;
 close all;
 clc;
+%%% This code provides sufficient statistics based optimal strategy of
+%%% player 1
 %% Initialization
 load M.mat;%payoff matrix
 G=M;
@@ -149,5 +151,8 @@ for t=1:T
     end
 end
 %%% Player 1's optimal strategy
-sigma %sigma(1st row) for a=1 and tau(2nd row) for a=2. Each column indicates each information set at different stages. For example. 4th column represents the optimal strategy of player1 when information set is (k_1=1, a_1=1, b_1=1, k_2=2)
+sigma %sigma(1st row) for a=1 and sigma(2nd row) for a=2. Each column indicates each information 
+%set at different stages. For example. 5th column is for T=2 (k_1=1, a_1=1, b_1=1, k_2=2). For 
+%this history information set player 1 will take action a=1 with probability 0 and  action a=2 
+%with probability 1
 
