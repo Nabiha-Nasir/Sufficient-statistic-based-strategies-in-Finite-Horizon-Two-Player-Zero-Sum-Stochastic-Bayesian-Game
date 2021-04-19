@@ -149,7 +149,10 @@ for t=1:T
     end
 end
 %%% sigma is player 1's optimal strategy
-sigma %sigma(1st row) for a=1 and sigma(2nd row) for a=2. Each column indicates each information set at different stages. For example. 5th column is for T=2 (k_1=1, a_1=1, b_1=1, k_2=2)
+sigma %sigma(1st row) for a=1 and sigma(2nd row) for a=2. Each column indicates each information 
+%set at different stages. For example. 5th column is for T=2 (k_1=1, a_1=1, b_1=1, k_2=2). For 
+%this history information set player 1 will take action a=1 with probability 0 and  action a=2 
+%with probability 1
 
 %% to find ontimal nu
 %to find UJ1
